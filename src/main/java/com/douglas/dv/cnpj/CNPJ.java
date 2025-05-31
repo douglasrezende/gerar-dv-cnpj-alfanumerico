@@ -46,7 +46,7 @@ public class CNPJ {
 
 	}
 
-	private static String calcularPrimeiroDV(List<Long> resultadosMultiplicacao, String cnpj) throws Exception {
+	public static String calcularPrimeiroDV(List<Long> resultadosMultiplicacao, String cnpj) throws Exception {
 
 		int primeiroDV = 0;
 		Long valor = 0L;
@@ -109,7 +109,7 @@ public class CNPJ {
 		return String.valueOf(primeiroDV);
 	}
 
-	private static String calcularSegundoDV(List<Long> resultadosMultiplicacao, String cnpj) throws Exception {
+	public static String calcularSegundoDV(List<Long> resultadosMultiplicacao, String cnpj) throws Exception {
 
 		int segundoDV = 0;
 		Long valor = 0L;
